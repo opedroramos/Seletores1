@@ -1,0 +1,57 @@
+/*Seletor id*/
+#id{
+    color: blue;
+}
+/*Seletor classes*/
+.classe{
+    color: green;
+}
+/*Seletor filho*/
+#div-1 > h3, p{
+    color: red;
+}
+/*Seletor Descendente*/
+#div-2 p{
+    color: yellow;
+}
+/*Seletor irmãos adjacentes e gerais*/
+#par + p{
+    color: blueviolet;
+}
+#par ~ p{
+    color: aqua;
+}
+/*Seletor por atributo*/
+a[id="opa"]{
+    color: violet;
+}
+a[href^="g"]{
+    color: green;
+}
+a[href$="br"]{
+    color: aqua;
+}
+a[href*="mz"]{
+    color: orange;
+}
+input[type="text"]{
+    background-color: black;
+    color: white;
+}
+/*Seletor por pseudo-class*/
+h1:hover{
+    color: red;
+}
+/*Seletor por pseudo-elemento*/
+p#parr::first-line{
+    color: blue;
+}
+p#parr::first-letter{
+    font-size: 80px;
+}
+p.ppp:not(:last-child){
+    color: blue;
+}
+p.ppp:nth-child(even){
+    color: green;
+}
